@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Matrix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f0f8ff;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077be;
+    }
+
+    .hotel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .hotel-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .hotel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .hotel-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .hotel-info {
+      padding: 1rem;
+    }
+
+    .hotel-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #0077be;
+    }
+
+    .hotel-type {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .stars {
+      color: #f39c12;
+      font-size: 1rem;
+    }
+
+    .price {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .original-price {
+        text-decoration: line-through;
+        color: #888;
+        margin-right: 0.5rem;
+    }
+
+    .discounted-price {
+        color: #27ae60; /* green for discount */
+        font-weight: bold;
+    }
+
+    .coupon-btn {
+        display: inline-block;
+        margin-top: 1rem;
+         background-color: #f39c12; /* warm, inviting orange */
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+    }
+
+    .coupon-btn:hover {
+        background-color: #d98e04;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="header">
+          <div class="logo">
+            <img src="logo.png" alt="Visit Taniti Logo" />
+          </div>
+            <h1>Book Your Stay</h1>
+            <div class="navigation">
+                <a href="index.html" class="home-link">Home</a>
+                <a href="lodging-hotels.html" class="lodging-link" style="color:black; font-weight: bold;">Lodging & Hotels</a>
+                <a href="entertainment.html" class="entertainment-link">Entertainment</a>
+                <a href="faq.html" class="faq-link">FAQ</a>
+                <a href="contact.html" class="contact-link">Contact</a>
+                <a href="transportation.html" class="transportation-link">Transportation</a>
+                <a href="amenities.html" class="amenities-link">Amenities</a>
+                <a href="food.html" class="food-link">Food</a>
+            </div>
+        </div>
+
+    <div class="hotel-grid">
+    
+    <!-- Hostel -->
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://i0.wp.com/amaritime.org/wp-content/uploads/2023/12/smith-island-crab-shanty.jpg?resize=600%2C240&ssl=1" alt="Seaside Bunks Hostel">
+      <div class="hotel-info">
+        <div class="hotel-name">Seaside Bunks Hostel</div>
+        <div class="hotel-type">Inexpensive Hostel</div>
+        <div class="stars">⭐</div>
+        <div class="price">
+            <span class="original-price">$145/night</span>
+            <span class="discounted-price">$130/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <!-- Resort -->
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2018/02/HAYMAN-ISLAND-GREAT-BARRIER-REEF-AUSTRALIA.jpg?resize=678%2C381&ssl=1" alt="Coral Bay Grand Resort">
+      <div class="hotel-info">
+        <div class="hotel-name">Coral Bay Grand Resort</div>
+        <div class="hotel-type">Luxury Resort</div>
+        <div class="stars">⭐⭐⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$250/night</span>
+            <span class="discounted-price">$220/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <!-- Family / B&B -->
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://soultravelers3.typepad.com/.a/6a00e5502a95078833017ee84a8934970d-800wi" alt="Palm Breeze Inn">
+      <div class="hotel-info">
+        <div class="hotel-name">Palm Breeze Inn</div>
+        <div class="hotel-type">Family-Owned B&B</div>
+        <div class="stars">⭐⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$200/night</span>
+            <span class="discounted-price">$185/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://images.getaroom-cdn.com/image/upload/s--WqFXS4Ql--/c_limit,e_improve,fl_lossy.immutable_cache,h_940,q_auto:good,w_940/v1526343504/89caa09f1085b7d868fc81ed3f06981c56bcd786?atc=e7cd1cfa" alt="Ocean Whisper Guesthouse">
+      <div class="hotel-info">
+        <div class="hotel-name">Ocean Whisper Guesthouse</div>
+        <div class="hotel-type">Family-Owned Hotel</div>
+        <div class="stars">⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$190/night</span>
+            <span class="discounted-price">$160/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/MackinacIslandMI/Front-1_e49ff163-c760-4af0-b9c2-e14fe9d9bc22.jpg" alt="Tidepool Retreat">
+      <div class="hotel-info">
+        <div class="hotel-name">Tidepool Retreat</div>
+        <div class="hotel-type">Bed & Breakfast</div>
+        <div class="stars">⭐⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$190/night</span>
+            <span class="discounted-price">$170/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f4/0e/e2/caption.jpg?w=900&h=500&s=1" alt="Sandy Toes Stay">
+      <div class="hotel-info">
+        <div class="hotel-name">Sandy Toes Stay</div>
+        <div class="hotel-type">Family-Owned B&B</div>
+        <div class="stars">⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$150/night</span>
+            <span class="discounted-price">$120/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://cf.bstatic.com/xdata/images/hotel/max500/485846666.jpg?k=72f285904852bce8799def55bd8d85f40c19ef7019921dce0ccc2b9f68a9abf5&o=" alt="Coconut Cove Inn">
+      <div class="hotel-info">
+        <div class="hotel-name">Coconut Cove Inn</div>
+        <div class="hotel-type">Bed & Breakfast</div>
+        <div class="stars">⭐⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$170/night</span>
+            <span class="discounted-price">$1500/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://passport-cdn.kiwicollection.com/blog/drive/uploads/2022/11/Conrad-Bora-Bora-Nui-MAIN-IMAGE-693x390.jpg" alt="Blue Lagoon Lodge">
+      <div class="hotel-info">
+        <div class="hotel-name">Blue Lagoon Lodge</div>
+        <div class="hotel-type">Family-Owned Hotel</div>
+        <div class="stars">⭐⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$180/night</span>
+            <span class="discounted-price">$155/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+    <div class="hotel-card">
+      <img class="hotel-img" src="https://c7.alamy.com/comp/2G9XTXP/bali-23-march-2020-the-photo-shows-a-tropical-bungalow-exotic-housing-located-in-the-jungle-on-the-shores-of-the-atlantic-ocean-the-tropical-lodge-2G9XTXP.jpg" alt="Jungle Nest Cabins">
+      <div class="hotel-info">
+        <div class="hotel-name">Jungle Nest Cabins</div>
+        <div class="hotel-type">Eco-Friendly B&B</div>
+        <div class="stars">⭐⭐</div>
+        <div class="price">
+            <span class="original-price">$145/night</span>
+            <span class="discounted-price">$115/night</span>
+        </div>
+        <button class="coupon-btn">Apply Coupon</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

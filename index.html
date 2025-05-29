@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti Island</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        .scroll-prompt {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-translucent black */
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            z-index: 9999;
+            animation: fadeIn 1s ease-in-out;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Arrow animation */
+        .scroll-arrow {
+            margin-top: 0.5rem;
+            font-size: 2rem;
+            animation: bounce 1.5s infinite;
+        }
+
+        /* Bounce animation */
+        @keyframes bounce {
+            0%, 100% {
+            transform: translateY(0);
+        }
+            50% {
+            transform: translateY(8px);
+        }
+    }
+
+        /* Fade in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, 20px);
+        }
+            to {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        /* Hide on scroll */
+        .hide-scroll-prompt {
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+          <div class="logo">
+            <img src="logo.png" alt="Visit Taniti Logo" />
+          </div>
+            <h1>Welcome to Taniti!</h1>
+            <div class="navigation">
+                <a href="index.html" class="home-link" style="color:black; font-weight: bold;">Home</a>
+                <a href="lodging-hotels.html" class="lodging-link">Lodging & Hotels</a>
+                <a href="entertainment.html" class="entertainment-link">Entertainment</a>
+                <a href="faq.html" class="faq-link">FAQ</a>
+                <a href="contact.html" class="contact-link">Contact</a>
+                <a href="transportation.html" class="transportation-link">Transportation</a>
+                <a href="amenities.html" class="amenities-link">Amenities</a>
+                <a href="food.html" class="food-link">Food</a>
+            </div>
+        </div>
+        <div id="scrollPrompt" class="scroll-prompt">Scroll Down
+            <div class="scroll-arrow">↓</div>
+        </div>
+        <div class="background-image"></div>
+        <div class="container">
+            <p class="description" style="font-size: 30px;">Taniti is a small, tropical island in the Pacific. 
+            While the island has an area of less than 500 square miles, the terrain is varied and includes
+             both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous
+              interior that includes a small, active volcano. Taniti has an indigenous population of about 20,000.
+               Until a recent increase in tourism, most the Tanitian economy was dominated by fishing or agriculture.</p>
+        </div>
+        <div class="second-background-image"></div>
+        <div class="container">
+            <p class="description" style="font-size: 30px;">Taniti has a wide variety of lodging that ranges from an inexpensive 
+            hostel to one large, four-star resort. There are many small, family-owned hotels and a growing number of bed and 
+            breakfasts. All types of lodging are strictly regulated and regularly inspected by the Tanitian government.</p>
+            <div class="lodging-link">
+                <a href="lodging-hotels.html">Book Now!</a>
+            </div>
+        </div>
+        <div class="third-background-image"></div>
+        <div class="container">
+            <p class="description" style="font-size: 30px;">Almost all visitors arrive to Taniti by air, though some arrive 
+                on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small 
+                airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport
+                 so larger jets will be able to land on the island within the next few years. </p>
+            <div class="transportation-link">
+                <div class="booking-options">
+                    <div class="img-wrapper">
+                        <img src="https://gray-wmctv-prod.gtv-cdn.com/resizer/v2/5V62QS6ZHNF6DBA7656F3RS4UY.jpg?auth=a09ffce18f472d7a68935df6ffdf3be5b6dacd59f26fb1effb420310cd41f4fc&width=1600&height=900&smart=true" alt="Flight Icon">
+                    </div>
+                    <a href="flight.html">Book Flight</a>
+                </div>
+                <div class="booking-options">
+                    <div class="img-wrapper">
+                        <img src="https://s3.amazonaws.com/cms.ipressroom.com/412/files/202504/67eea6123d6332920e37f52c_Sunsation+Point+Aerial+Rendering/Sunsation+Point+Aerial+Rendering_mid.jpg" alt="Cruise Icon">
+                    </div>
+                        <a href="cruise.html">Book Cruise</a>
+                </div>
+            </div>
+        </div>
+        <div class="fourth-background-image"></div>
+        <div class="container">
+            <p class="description" style="font-size: 30px;">There's plenty of stuff to do on the island of Taniti. 
+                Most people visit Taniti to enjoy the beaches, explore the rainforest, and to visit the volcano. 
+                However, there are other things to do, including visiting a local history museum, going on chartered 
+                fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs, including a microbrewery, 
+                dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art 
+                galleries, and bowling. Also, a nine-hole golf course should be operational by next year. Many of these 
+                activities are located in Merriton Landing, which is a rapidly developing area on the north side of Yellow Leaf Bay. </p>
+            <div class="entertainment-link">
+                <a href="entertainment.html">Explore Entertainment</a>
+            </div>
+        </div>
+            <div class="fifth-background-image"></div>
+        
+    <footer>
+        <p>&copy; 2023 Taniti Island. All rights reserved.</p>
+    </footer>
+    <script>
+        const scrollPrompt = document.getElementById('scrollPrompt');
+
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            scrollPrompt.classList.add('hide-scroll-prompt');
+        }
+    });
+</script>
+</body>
+

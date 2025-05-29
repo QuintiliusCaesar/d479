@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food & Dining - Visit Taniti</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0fdfd;
+      margin: 0;
+      padding: 0;
+      color: #003f2d;
+    }
+    header {
+      background-color: #0077be;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2em;
+    }
+    .restaurant-card {
+      display: flex;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 2em;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .restaurant-card img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+    .restaurant-info {
+      padding: 1em;
+      flex: 1;
+    }
+    .restaurant-info h3 {
+      margin-top: 0;
+      color: #006400;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: pacifico, cursive;
+    }
+    .restaurant-info p {
+      margin: 0.5em 0;
+    }
+    .restaurant-info button {
+      background-color: #0077be;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.5em;
+    }
+    .restaurant-info button:hover {
+      background-color: #005f99;
+    }
+    .grocery-section {
+      margin-top: 3em;
+      background-color: #e0f7f5;
+      padding: 1.5em;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+          <div class="logo">
+            <img src="logo.png" alt="Visit Taniti Logo" />
+          </div>
+            <h1>Find Something to Eat</h1>
+            <div class="navigation">
+                <a href="index.html" class="home-link">Home</a>
+                <a href="lodging-hotels.html" class="lodging-link">Lodging & Hotels</a>
+                <a href="entertainment.html" class="entertainment-link">Entertainment</a>
+                <a href="faq.html" class="faq-link">FAQ</a>
+                <a href="contact.html" class="contact-link">Contact</a>
+                <a href="transportation.html" class="transportation-link">Transportation</a>
+                <a href="amenities.html" class="amenities-link">Amenities</a>
+                <a href="food.html" class="food-link" style="color:black; font-weight: bold;">Food</a>
+            </div>
+        </div>
+  <div class="container">
+    <p>Whether you're craving fresh seafood, classic American comfort food, or flavorful pan-Asian dishes, 
+        Taniti offers a rich variety of dining options. Here are 10 of our top spots:</p>
+
+    
+    <!-- Fish & Rice Restaurants -->
+    <div class="restaurant-card">
+      <img src="https://thecozyapron.com/wp-content/uploads/2021/06/grilled-mahi-mahi_thecozyapron_1.jpg" alt="Ocean Flavor Restaurant">
+      <div class="restaurant-info">
+        <h3>Ocean Flavor</h3>
+        <p>Known for its fresh mahi-mahi and jasmine rice bowls, Ocean Flavor is a beachfront favorite with sunset views.</p>
+        <p><strong>Address:</strong> 12 Shoreline Blvd, Taniti City</p>
+        <p><strong>Phone:</strong> (800) 555-5555</p>
+        <button>Make a Reservation</button>
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+      <img src="https://assets.epicurious.com/photos/5f57ca0bbf72b9ce64676331/1:1/w_1920,c_limit/salt-and-pepper-fish-recipe-BA-090820.jpg" alt="Island Catch Restaurant">
+      <div class="restaurant-info">
+        <h3>Island Catch</h3>
+        <p>Catch of the day specials with wild rice, coconut sauces, and ocean-to-table freshness.</p>
+        <p><strong>Address:</strong> 88 Coral Lane, Taniti Harbor</p>
+        <p><strong>Phone:</strong> (800) 555-0000</p>
+        <button>Make a Reservation</button>
+      </div>
+    </div>
+
+        <div class="restaurant-card">
+  <img src="https://www.foodandwine.com/thmb/-wrVEmLnndHnIzla-W2g2x-LLQA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Korean-Style-Seared-Tuna-FT-RECIPE0822-2000-1e6d136c69684c0a9e31f584b3161a81.jpg" alt="Reefside Grill">
+  <div class="restaurant-info">
+    <h3>Reefside Grill</h3>
+    <p>This breezy dockside eatery serves grilled tuna steaks, sticky rice, and tropical fruit glazes. A local favorite.</p>
+    <p><strong>Address:</strong> 7 Dockside Drive, Taniti Port</p>
+    <p><strong>Phone:</strong> (800) 555-1111</p>
+    <button>Make a Reservation</button>
+  </div>
+</div>
+
+        <div class="restaurant-card">
+  <img src="https://fox5sandiego.com/wp-content/uploads/sites/15/2023/07/MP_valleterrace2_65326-4.jpg?w=876&h=493&crop=1" alt="Tide & Table">
+  <div class="restaurant-info">
+    <h3>Tide & Table</h3>
+    <p>Elegant island dining with sesame-crusted marlin, bamboo rice, and ocean views from every seat.</p>
+    <p><strong>Address:</strong> 45 Marina Walk, South Taniti</p>
+    <p><strong>Phone:</strong> (800) 555-2222</p>
+    <button>Make a Reservation</button>
+  </div>
+</div>
+
+        <div class="restaurant-card">
+  <img src="https://www.foodandwine.com/thmb/welKh9MjQXMmauwnhLNyqxDngsA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/grilled-whole-snapper-hero-01-c0efd3ed86564a7ba2c4fd7a481615c5.jpg" alt="Blue Lagoon Dining">
+  <div class="restaurant-info">
+    <h3>Blue Lagoon Dining</h3>
+    <p>Outdoor seating over crystal water, grilled snapper with island rice, and cold coconut drinks.</p>
+    <p><strong>Address:</strong> 98 Lagoon Way, Taniti East Shore</p>
+    <p><strong>Phone:</strong> (800) 555-3333</p>
+    <button>Make a Reservation</button>
+  </div>
+</div>
+
+    <!-- American Restaurants -->
+    <div class="restaurant-card">
+      <img src="https://images.squarespace-cdn.com/content/v1/61c38dbdda885109e22a3868/c437918e-5516-4dfa-bb75-03fe645f57fb/burger+and+fries.jpg?format=750w" alt="Burger Haven">
+      <div class="restaurant-info">
+        <h3>Burger Haven</h3>
+        <p>Grilled burgers, crispy fries, and milkshakes just like home — with a tropical twist.</p>
+        <p><strong>Address:</strong> 33 Sunset Strip, Taniti City</p>
+        <p><strong>Phone:</strong> (800) 555-4444</p>
+        <button>Make a Reservation</button>
+      </div>
+    </div>
+
+        <div class="restaurant-card">
+  <img src="https://i0.wp.com/liveruralnl.com/wp-content/uploads/2021/12/img_9861-1.jpg?resize=840%2C630&ssl=1" alt="Sunset Diner">
+  <div class="restaurant-info">
+    <h3>Sunset Diner</h3>
+    <p>Retro vibes, bottomless coffee, and all-day breakfast with island-fresh eggs and pancakes.</p>
+    <p><strong>Address:</strong> 210 Palm Avenue, Taniti City</p>
+    <p><strong>Phone:</strong> (800) 555-6666</p>
+    <button>Make a Reservation</button>
+  </div>
+</div>
+
+        <div class="restaurant-card">
+  <img src="https://nutritionistmom.com/cdn/shop/articles/SteakPotatoesMealPrep3_1000x.jpg?v=1645123050" alt="Taniti Grillhouse">
+  <div class="restaurant-info">
+    <h3>Taniti Grillhouse</h3>
+    <p>Classic steaks, BBQ ribs, and loaded baked potatoes — perfect after a day in the sun.</p>
+    <p><strong>Address:</strong> 55 Flame Rd, Taniti Central</p>
+    <p><strong>Phone:</strong> (800) 555-7777</p>
+    <button>Make a Reservation</button>
+  </div>
+</div>
+
+    <!-- Pan-Asian Restaurants -->
+    <div class="restaurant-card">
+      <img src="https://www.experiencetravelgroup.com/blog/wp-content/uploads/2023/02/vietnam-pho-1024x683.png" alt="Noodle Grove">
+      <div class="restaurant-info">
+        <h3>Noodle Grove</h3>
+        <p>A fusion of Thai, Vietnamese, and Indonesian flavors in a cozy garden setting.</p>
+        <p><strong>Address:</strong> 5 Lotus Street, North Taniti</p>
+        <p><strong>Phone:</strong> (800) 555-8888</p>
+        <button>Make a Reservation</button>
+      </div>
+    </div>
+
+     <div class="restaurant-card">
+  <img src="https://www.columbusmonthly.com/gcdn/authoring/authoring-images/2024/05/09/NCOM/73633682007-cm-korean-bbq-tj-04.jpg?width=660&height=442&fit=crop&format=pjpg&auto=webp" alt="Eastern Breeze">
+  <div class="restaurant-info">
+    <h3>Eastern Breeze</h3>
+    <p>Enjoy sushi rolls, spicy Korean BBQ bowls, and Thai green curry with beachside seating under lantern-lit palms.</p>
+    <p><strong>Address:</strong> 18 Bamboo Bay Rd, East Taniti</p>
+    <p><strong>Phone:</strong> (800) 555-9999</p>
+    <button>Make a Reservation</button>
+  </div>
+</div>
+
+    <!-- Grocery Section -->
+    <div class="grocery-section">
+      <h2>Prefer to Cook Yourself?</h2>
+      <p>If you'd rather prepare your own meals, Taniti has several convenient 24/7 food outlets:</p>
+      <ul>
+        <li><strong>SunMart Supermarket</strong> – Central Taniti City</li>
+        <li><strong>TropicGro Supermarket</strong> – Near the airport</li>
+        <li><strong>Green Basket Market</strong> – Small neighborhood grocery</li>
+        <li><strong>Island Roots Grocery</strong> – Organic and local products</li>
+        <li><strong>QuickStop Convenience Store</strong> – Open 24/7 near the bus terminal</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
